@@ -5,9 +5,13 @@ body {
 }
 .container{
     position: absolute;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
 }
 #banner {
-    z-index: 0;
+    width: 300px;
+    height: 600px;
     position: relative;
     animation: background-animation 10s infinite;
 
@@ -16,7 +20,7 @@ body {
     font-family: Oswald;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 1em;
     position: absolute;
     top: 40%;
     left: 33%;
@@ -29,7 +33,7 @@ body {
     font-family: Oswald;
     color: white;
     font-weight: bold;
-    font-size: 7em;
+    font-size: 3em;
     position: absolute;
     top: 25%;
     left: 50%;
@@ -41,7 +45,7 @@ body {
     font-family: Oswald;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 1.5em;
     position: absolute;
     top: 34%;
     left: 50%;
@@ -52,8 +56,8 @@ body {
 #phone {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 3em;
-    height: 80px;
+    font-size: 1em;
+    height: 30px;
     position: absolute;
     top: 40%;
     left: 33%;
@@ -62,7 +66,7 @@ body {
 }
 #present-container {
     width: 40%;
-    height: 170px;
+    height: 50px;
     overflow: hidden;
     position: absolute;
     top: 17%;
@@ -74,7 +78,7 @@ body {
     font-family: Oswald;
     font-weight: bold;
     font-size: 3em;
-    height: 80px;
+    height: 30px;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -87,12 +91,21 @@ body {
     position: absolute;
     top:80%;
     left: 10%;
+    height: 30px;
     animation: store 10s infinite;
 }
 #gplay {
     position: absolute;
     left: 10%;
-    top: 85%;
+    top: 86%;
+    height: 30px;
+    animation: store 10s infinite;
+}
+#qr {
+    position: absolute;
+    left: 80%;
+    top: 83%;
+    height: 30px;
     animation: store 10s infinite;
 }
 @keyframes background-animation {
@@ -102,13 +115,13 @@ body {
 }
 @keyframes blue-sky {
     0% {opacity: 0; transform: translateX(-50%)}
-    10% {opacity: 0;  transform: translateY(50px) translateX(-50%)}
+    10% {opacity: 0;  transform: translateY(20px) translateX(-50%)}
     20% {opacity: 1;  transform: translateX(-50%)}
     100% {opacity: 1;  transform: translateX(-50%)}
 }
 @keyframes mooie {
     0% {opacity: 0; transform: translateX(-50%)}
-    15% {opacity: 0;  transform: translateY(50px) translateX(-50%)}
+    15% {opacity: 0;  transform: translateY(20px) translateX(-50%)}
     25% {opacity: 1;  transform: translateX(-50%)}
     100% {opacity: 1;  transform: translateX(-50%)}
 }
@@ -133,11 +146,11 @@ body {
 @keyframes present {
     0% {transform: translateY(-120px) translateX(-30%) rotate(-15deg); opacity: 0}
     5% {transform: translateY(-120px) translateX(-30%) rotate(-15deg);transform-origin: center; opacity: 1}
-    10% {transform: translateY(50px) translateX(-30%) rotate(-15deg);transform-origin: center; opacity: 1}
-    11% {transform: translateY(50px) translateX(-30%) rotate(0deg);transform-origin: center; opacity: 1}
-    12% {transform: translateY(50px) translateX(-30%) rotate(5deg);transform-origin: bottom right; opacity: 1}
-    14% {transform: translateY(50px) translateX(-30%) rotate(0deg); opacity: 1}
-    100% {transform: translateY(50px) translateX(-30%); opacity: 1}
+    10% {transform: translateY(10px) translateX(-30%) rotate(-15deg);transform-origin: center; opacity: 1}
+    11% {transform: translateY(10px) translateX(-30%) rotate(0deg);transform-origin: center; opacity: 1}
+    12% {transform: translateY(10px) translateX(-30%) rotate(5deg);transform-origin: bottom right; opacity: 1}
+    14% {transform: translateY(10px) translateX(-30%) rotate(0deg); opacity: 1}
+    100% {transform: translateY(10px) translateX(-30%); opacity: 1}
 
 }
 @keyframes store {
